@@ -1,0 +1,54 @@
+*.font: xft:Iosevka Nerd Font Mono:style=Regular:size=24
+xterm*loginShell: true
+xterm*saveLines: 2000
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+xterm*termName: xterm-256color
+xterm*eightBitInput: false
+xterm*utf8: true
+xterm*renderFont: true
+
+xterm*foreground: rgb:cb/e0/f0
+xterm*background: rgb:00/00/00
+
+xterm*cursorColor:rgb:47/ff/9c
+
+!black
+xterm*color0: rgb:21/49/69
+xterm*color8: rgb:21/49/69
+
+!red
+xterm*color1: rgb:e5/2e/2e
+xterm*color9: rgb:e5/2e/2e
+
+!green
+xterm*color2: rgb:44/ff/b1
+xterm*color10: rgb:44/ff/b1
+
+!yellow
+xterm*color3: rgb:ff/e0/73
+xterm*color11: rgb:ff/e0/73
+
+!blue
+xterm*color4: rgb:0f/c5/ed/
+xterm*color12: rgb:a2/77/ff
+
+!magenta
+xterm*color5: rgb:a2/77/ff
+xterm*color13: rgb:a2/77/ff
+
+!cyan
+xterm*color6: rgb:24/ea/f7
+xterm*color14: rgb:24/ea/f7
+
+!white
+xterm*color7: rgb:24/ea/f7
+xterm*color15: rgb:24/ea/f7
+
+xterm*boldMode: false
+xterm*colorBDMode: true
+xterm*scrollBar: false
+
+xterm*vt100.translations: #override \n\
+  Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+
