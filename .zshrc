@@ -1,6 +1,5 @@
 autoload -Uz compinit
 compinit
-export PATH=$PATH:~/Downloads/android-studio/bin/
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -181,7 +180,7 @@ _fzf_comprun() {
     *)            fzf --preview "bat -n --color=always --line-range :500 {}" "$@" ;;
   esac
 }
-
+source <(devpod completion zsh)
 # ----- Bat (better cat) -----
 export BAT_THEME=tokyonight_night
 
