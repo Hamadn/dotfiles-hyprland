@@ -7,9 +7,6 @@ export PATH="$PATH:/home/hamad/.local/bin"
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux new-session -A -s main
-fi
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -30,7 +27,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export QT_QPA_PLATFORM=wayland
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export WAYLAND_DISPLAY=wayland-1
-EDITOR="nvim"
+export EDITOR="nvim"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
@@ -53,6 +50,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias vim="nvim"
 alias cl="clear"
+alias tmux="tmux new-session -A -s main"
 alias config='/home/linuxbrew/.linuxbrew/bin/git --git-dir=/home/hamad/dotfiles --work-tree=/home/hamad'
 
 # ---- FZF -----
