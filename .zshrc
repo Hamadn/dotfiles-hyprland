@@ -52,6 +52,7 @@ alias vim="nvim"
 alias cl="clear"
 alias tmux="tmux new-session -A -s main"
 alias config='/home/linuxbrew/.linuxbrew/bin/git --git-dir=/home/hamad/dotfiles --work-tree=/home/hamad'
+alias mks="minikube start"
 
 # ---- FZF -----
 # Set up fzf key bindings and fuzzy completion
