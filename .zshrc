@@ -24,8 +24,7 @@ source <(devpod completion zsh)
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-export QT_QPA_PLATFORM=wayland
-export QT_QPA_PLATFORMTHEME="qt5ct"
+
 export WAYLAND_DISPLAY=wayland-1
 export EDITOR="nvim"
 
