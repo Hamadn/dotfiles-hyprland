@@ -23,12 +23,14 @@ source <(devpod completion zsh)
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export ZETTELKASTEN="$HOME/Documents/Zettelkasten/"
+export ZETTELKASTEN="$HOME/Zettelkasten/"
 
 
 export WAYLAND_DISPLAY=wayland-1
-export EDITOR="nvim"
+export VISUAL=nvim
+export EDITOR=nvim
 export BROWSER="qutebrowser"
+export TERM="tmux-256color"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
