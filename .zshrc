@@ -23,10 +23,12 @@ source <(devpod completion zsh)
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export ZETTELKASTEN="$HOME/Documents/Zettelkasten/"
 
 
 export WAYLAND_DISPLAY=wayland-1
 export EDITOR="nvim"
+export BROWSER="qutebrowser"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
@@ -47,11 +49,14 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-alias vim="nvim"
+alias v="nvim"
 alias cl="clear"
-alias tmux="tmux new-session -A -s main"
+alias tmain="tmux new-session -A -s main"
 alias config='/home/linuxbrew/.linuxbrew/bin/git --git-dir=/home/hamad/dotfiles --work-tree=/home/hamad'
 alias mks="minikube start"
+alias lg="lazygit"
+alias cd="z"
+alias zrc="v ~/.zshrc"
 
 # ---- FZF -----
 # Set up fzf key bindings and fuzzy completion
@@ -119,6 +124,5 @@ eval $(thefuck --alias fk)
 # ---- Zoxide (better cd) ----
 eval "$(zoxide init zsh)"
 
-alias cd="z"
 unset ZSH_AUTOSUGGEST_USE_ASYNC
 
