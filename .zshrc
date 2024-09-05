@@ -23,7 +23,7 @@ source <(devpod completion zsh)
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export ZETTELKASTEN="$HOME/Zettelkasten/"
+export ZETTELKASTEN="$HOME/second-brain/"
 
 
 export WAYLAND_DISPLAY=wayland-1
