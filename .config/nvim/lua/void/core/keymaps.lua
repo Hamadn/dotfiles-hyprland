@@ -6,6 +6,11 @@ local keymap = vim.keymap -- for conciseness
 ---------------------
 -- General Keymaps -------------------
 
+-- save and exit with easily
+keymap.set("n", "<leader>wq", ":wq<CR>", { desc = "save and exit" })
+keymap.set("n", "<leader>w", ":w<CR>", { desc = "save" })
+keymap.set("n", "<leader>q", ":q<CR>", { desc = "exit" })
+
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
