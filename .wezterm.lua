@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
 
-config.font = wezterm.font("UbuntuMono Nerd Font Mono")
+config.font = wezterm.font("mononoki Nerd Font Mono")
 config.font_size = 20
 config.window_padding = {
 	left = 7,
